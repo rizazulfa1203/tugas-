@@ -1,0 +1,21 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	
+		int angkaAwal = 2;
+		int angkaAkhir =200;
+		
+		for ( int s = angkaAwal ; s <= angkaAkhir ; s++ ) {
+			int counterPrima = 0 ;
+			for (int r =2 ; r <= s ; r++) {
+				if (s % r == 0 ) {
+					counterPrima++;
+				}
+			}
+			if (counterPrima == 2){
+				cout << s << " ialah bilangan prima " << endl;
+			}
+		}
+		return 0; 
+}
